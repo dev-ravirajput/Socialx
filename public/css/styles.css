@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+body {
+    background-color: #fafafa;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .card-text {
+    color: #b0b0b0;
+}
+
+body.dark-mode .btn-outline-success {
+    border-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-outline-success:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.navbar {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.card {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #4d4d4d;
+}
+
+.btn-outline-success {
+    border-color: #dbdbdb;
+    color: #262626;
+}
+
+.btn-outline-success:hover {
+    background-color: #fafafa;
+    border-color: #dbdbdb;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .container {
+        margin-top: 60px;
+    }
+}
+
+.btn-default{
+    color: #fff;
+    background-color: #f5ba41;
+    padding: .375rem .75rem;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(253 182 13 / 25%);
+}
+
+.logo-title {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.logo-title {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.profile-card .profile-image-container {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    margin: 0 auto; /* Center the image */
+    overflow: hidden; /* Ensure the image stays within the circle */
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #ddd; /* Optional: Add a border */
+}
+
+.profile-card .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.profile-image-container {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    overflow: hidden; /* Ensure the image stays within the circle */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #ddd; /* Optional: Add a border */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.suggestion-item {
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa; 
+    color: #000;
+}
+
+.suggestion-details h6 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.suggestion-details small {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.btn-sm {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+}
+
+/* Thin scrollbar with custom color */
+body::-webkit-scrollbar {
+    width: 5px; /* Make the scrollbar thinner */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #f5ba41; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #e0a53a; /* Scrollbar thumb color on hover */
+}
+
+.profile-page .profile-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin: 0 auto;
+}
+
+.profile-page .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tabs */
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    border: none;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+/* Posts Grid */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+/* Suggestion Item Styling */
+.suggestion-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suggestion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button Styling */
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Text Styling */
+.suggestion-details h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.suggestion-details small {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
