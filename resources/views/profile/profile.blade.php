@@ -38,7 +38,7 @@
                 <div>
                     <p class="mb-0"><strong>{{ Auth::user()->name }}</strong></p>
                     <p class="mb-0">{{ Auth::user()->bio }}</p>
-                    <a href="#" class="text-decoration-none">example.com</a>
+                    <!-- <a href="#" class="text-decoration-none">example.com</a> -->
                 </div>
             </div>
         </div>
