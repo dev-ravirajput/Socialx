@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Main Content -->
-    <div class="container mt-3">
+    <div class="container">
         <div class="row">
             <!-- Posts Column -->
             <div class="col-lg-8">
@@ -102,10 +102,10 @@
                             <small class="text-muted">{{ $post->created_at->diffForHumans() }}</small>
                             
                             <!-- Add Comment -->
-                            <form class="mt-2 d-flex" action="{{ route('comment.store', $post->id) }}" method="POST">
+                            <form class="mt-2 d-flex mb-2" action="{{ route('comment.store', $post->id) }}" method="POST">
                                 @csrf
                                 <input type="text" class="form-control form-control-sm border-0 bg-light" placeholder="Add a comment..." name="comment">
-                                <button type="submit" class="btn btn-sm btn-link text-primary">Post</button>
+                                <button type="submit" class="btn btn-sm btn-link text-primary"><i class="far fa-paper-plane fa-lg"></i></button>
                             </form>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="mt-3 d-flex justify-content-between">
                             <a href="{{ route('profile') }}" class="btn btn-sm btn-outline-secondary flex-grow-1 me-2">Profile</a>
-                            <a href="{{ route('post.create') }}" class="btn btn-sm btn-primary flex-grow-1">Create Post</a>
+                            <a href="{{ route('post.create') }}" class="btn btn-sm btn-custom flex-grow-1">Create Post</a>
                         </div>
                     </div>
                 </div>
@@ -237,10 +237,8 @@
             </div>
         </div>
     </div>
-@endsection
 
-@section('scripts')
-<script>
+    <script>
     $(document).ready(function() {
         // Like button functionality
         $('.like-btn').click(function(e) {
@@ -282,53 +280,4 @@
         });
     });
 </script>
-@endsection
-
-@section('styles')
-<style>
-    body {
-        background-color: #fafafa;
-    }
-    
-    .card {
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    
-    .profile-image {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-    }
-    
-    .post-image-container {
-        background-color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .like-btn, .comment-btn, .share-btn, .bookmark-btn {
-        transition: transform 0.2s;
-    }
-    
-    .like-btn:hover, .comment-btn:hover, .share-btn:hover, .bookmark-btn:hover {
-        transform: scale(1.1);
-    }
-    
-    .dropdown-toggle::after {
-        display: none;
-    }
-    
-    @media (max-width: 991.98px) {
-        .container {
-            max-width: 100%;
-            padding: 0 15px;
-        }
-        
-        .col-lg-8 {
-            width: 100%;
-        }
-    }
-</style>
 @endsection

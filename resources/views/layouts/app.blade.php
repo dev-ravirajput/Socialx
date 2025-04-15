@@ -8,6 +8,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon-1.png') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <!-- Script -->
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -70,7 +73,6 @@
     @yield('content')
 
     <!-- Bootstrap JS and Dark Theme Script -->
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <script>
     // Dark Theme Toggle
     const darkModeToggle = document.getElementById('darkModeToggle');

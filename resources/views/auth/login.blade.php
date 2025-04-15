@@ -8,86 +8,8 @@
     <title>Socialx - Login</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .main-content {
-            width: 90%;
-            max-width: 1000px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin: 5em auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        .company__info {
-            background-color: #f5ba41;
-            color: #fff;
-            padding: 2em;
-            text-align: center;
-        }
-        .company__info h4 {
-            margin-top: 1em;
-        }
-        .login_form {
-            background-color: #fff;
-            padding: 2em;
-        }
-        .login_form h2 {
-            color: #f5ba41;
-            margin-bottom: 1.5em;
-        }
-        .form__input {
-            width: 100%;
-            border: 0;
-            border-bottom: 1px solid #aaa;
-            padding: 0.5em 0;
-            margin-bottom: 1.5em;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-        .form__input:focus {
-            border-bottom-color: #008080;
-            box-shadow: 0 4px 2px -2px rgba(0, 128, 128, 0.4);
-        }
-        .btn-custom {
-            width: 100%;
-            background-color: #f5ba41;
-            color: #fff;
-            border: none;
-            padding: 0.75em;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        .btn-custom:hover {
-            background-color: #e49b05;
-            color: #fff;
-        }
-        .form-check-label {
-            margin-left: 0.5em;
-        }
-        .register-link {
-            color: #008080;
-            text-decoration: none;
-        }
-        .register-link:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .main-content {
-                flex-direction: column;
-            }
-            .company__info {
-                border-radius: 20px 20px 0 0;
-            }
-            .login_form {
-                border-radius: 0 0 20px 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
 </head>
 <body>
     <!-- Main Content -->
